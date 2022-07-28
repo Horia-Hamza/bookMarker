@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Marker</title>
+</head>
+<body>
+  <div class="container text-center">
+    <h1 class="text-muted">Bookmarker</h1>
+    <hr>
+    <div class="form_container bg-light text-center p-5">
+      <h2 class="pb-4">Bookmark your favorite sites</h2>
+      <div class="text-center">
+        <label for="site-name" class="font-weight-bold py-2">Site Name</label>
+        <input type="text" class="form-control  " placeholder="Bookmarket Name" id="name">
+        <p class="is-invalid mt-2 text-danger d-none" id="invaid-message">name is invalid</p>
+      </div>
+      <div class="text-center py-4">
+        <label for="site-url" class="font-weight-bold py-2">Site Url</label>
+        <input type="text" class="form-control" placeholder="Website Url" id="url">
+        <p class="is-invalid mt-2 text-danger d-none" id="invaidUrlMessage">Url is invalid</p>
+      </div>
+      <button  type="submit" class="btn btn-primary ">Submit</button>
+      <button type="update" class="btn btn-warning d-none" id="update">Update</button>
+
+    </div>
+    <input type="text" class="form-control my-4 w-75 d-inline-block" placeholder="Search by bookmarket name" id="search">
+    <hr>
+  </div>
+  <div class="container bg-light " id="tableContainer">
+    <table class="table w-75">
+      <thead>
+        <th>Book Marker</th>
+        <th>Visit</th>
+        <th>Delete</th>
+      </thead>
+      <tbody id="tableBody">
+      
+      </tbody>
+      </table>
+   
+  <hr>
+  </div>
+  
+  <footer class="container">
+    <h6 class="text-muted">© 2019 Bookmarker Inc.</h6>
+  </footer>
+  
+
+    <script src="js/main.js"></script>
+</body>
+</html>
